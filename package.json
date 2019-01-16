@@ -1,0 +1,54 @@
+{
+  "name": "jest-mock-proxy",
+  "version": "1.0.0",
+  "description": "Mock classes and objects with the power of proxies!",
+  "license": "MIT",
+  "repository": "sebald/jest-mock-proxy",
+  "keywords": [
+    "jest",
+    "proxy",
+    "test",
+    "testing",
+    "mock",
+    "fixture"
+  ],
+  "author": "Sebastian Sebald <sebastian.sebald@gmail.com>",
+  "engines": {
+    "node": ">=8"
+  },
+  "main": "lib/index.js",
+  "files": [
+    "bin",
+    "lib",
+    "LICENSE",
+    "README.md"
+  ],
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  },
+  "dependencies": {},
+  "peerDependencies": {
+    "jest": ">=23"
+  },
+  "devDependencies": {
+    "@types/jest": "23.3.12",
+    "jest": "23.6.0",
+    "prettier": "1.15.3",
+    "pretty-quick": "1.8.1",
+    "ts-jest": "23.10.5",
+    "tslint": "5.12.1",
+    "tslint-config-prettier": "1.17.0",
+    "typescript": "3.2.2",
+    "typescript-tslint-plugin": "0.2.1"
+  },
+  "scripts": {
+    "start": "tsc",
+    "test": "jest --config jest.config.js",
+    "clean": "rm -rf lib",
+    "typecheck": "tsc --noEmit",
+    "lint": "tslint --format stylish \"src/**/*.ts\"",
+    "format": "prettier --write \"src/**/*.ts\""
+  }
+}

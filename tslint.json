@@ -1,0 +1,58 @@
+{
+  "extends": ["tslint-config-prettier"],
+  "rules": {
+    /**
+     *  Functionality
+     */
+    "ban-comma-operator": true,
+    "curly": true,
+    "forin": true,
+    "label-position": true,
+    "no-arg": true,
+    "no-construct": true,
+    "no-debugger": true,
+    "no-duplicate-super": true,
+    "no-duplicate-switch-case": true,
+    "no-duplicate-variable": [true, "check-parameters"],
+    "no-empty": true,
+    "no-eval": true,
+    "no-invalid-template-strings": true,
+    "no-shadowed-variable": true,
+    "no-string-literal": true,
+    "no-string-throw": true,
+    "no-switch-case-fall-through": true,
+    "no-unnecessary-class": true,
+    "no-unsafe-finally": true,
+    "no-var-keyword": true,
+    "only-arrow-functions": [true, "allow-named-functions"],
+    "prefer-object-spread": true,
+    "radix": true,
+    "triple-equals": [true, "allow-null-check"],
+    "use-isnan": true,
+
+    /**
+     *  Maintainability
+     */
+    "prefer-const": [true, { "destructuring": "all" }],
+
+    /**
+     *  Style
+     */
+    "arrow-return-shorthand": [true, "multiline"],
+    "class-name": true,
+    "interface-name": [true, "never-prefix"],
+    "no-angle-bracket-type-assertion": true,
+    "one-variable-per-declaration": [true, "ignore-for-loop"],
+    "prefer-method-signature": true,
+    "variable-name": [
+      true,
+      "ban-keywords",
+      "check-format",
+      "allow-leading-underscore",
+      "allow-snake-case"
+    ]
+  },
+  "linterOptions": {
+    "exclude": ["node_modules/**"]
+  }
+}
