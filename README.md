@@ -8,7 +8,7 @@ Every subsequent access will use the same spy. In combination with TypeScript th
 **tl;dr;**
 
 1. The `Proxy` makes any property and method available on the mock at runtime.
-2. TypeScript allows use to only access available properties and methods.
+2. TypeScript limits access to properties and methods to the specified generic.
 
 ## Install
 
