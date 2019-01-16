@@ -12,4 +12,7 @@ cache:
   directories:
     - node_modules
 script:
-  - yarn test
+  - yarn ci
+  - yarn global add codecov
+after_success:
+  - codecov

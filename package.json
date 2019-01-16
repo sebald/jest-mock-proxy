@@ -49,6 +49,7 @@
     "clean": "rm -rf lib",
     "typecheck": "tsc --noEmit",
     "lint": "tslint --format stylish \"src/**/*.ts\"",
-    "format": "prettier --write \"src/**/*.ts\""
+    "format": "prettier --write \"src/**/*.ts\"",
+    "ci": "jest --config jest.config.js --coverage"
   }
 }

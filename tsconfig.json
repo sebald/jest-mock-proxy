@@ -3,7 +3,7 @@
     "module": "commonjs",
     "target": "es2017",
     "lib": ["es2017"],
-    "sourceMap": false,
+    "sourceMap": true,
     "declaration": true,
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
@@ -22,5 +22,5 @@
     ]
   },
   "include": ["src/**/*"],
-  "exclude": ["lib", "node_modules", "**/*.test.ts"]
+  "exclude": ["coverage", "lib", "node_modules", "**/*.test.ts"]
 }
