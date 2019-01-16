@@ -1,6 +1,6 @@
 # jest-mock-proxy
 
-[![buid][ci-badge]][ci] [![version][version-badge]][package] [![MIT License][license-badge]][license]
+[![buid][ci-badge]][ci] [![buid][coverage-badge]][coverage] [![version][version-badge]][package] [![MIT License][license-badge]][license]
 
 > Mock classes and objects with the power of proxies!
 
@@ -79,6 +79,8 @@ test('use service to query', async () => {
 
 [ci]: https://travis-ci.org/sebald/jest-mock-proxy
 [ci-badge]: https://img.shields.io/travis/sebald/jest-mock-proxy.svg?style=flat-square
+[coverage]: https://codecov.io/gh/sebald/jest-mock-proxy
+[coverage-badge]: https://img.shields.io/codecov/c/github/sebald/jest-mock-proxy.svg?style=flat-square
 [license]: https://github.com/sebald/jest-mock-proxy/blob/master/LICENCE
 [license-badge]: https://img.shields.io/npm/l/jest-mock-proxy.svg?style=flat-square
 [package]: https://www.npmjs.com/package/jest-mock-proxy
