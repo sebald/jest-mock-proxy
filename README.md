@@ -1,5 +1,7 @@
 # jest-mock-proxy
 
+[![buid][ci-badge]][ci] [![version][version-badge]][package] [![MIT License][license-badge]][license]
+
 > Mock classes and objects with the power of proxies!
 
 Creates a `Proxy` that will dynamically create spies when a property is accessed the first time.
@@ -72,3 +74,12 @@ test('use service to query', async () => {
   expect(client.search.mock.calls).toMatchSnapshot();
 });
 ```
+
+<!-- LINKS -->
+
+[ci]: https://travis-ci.org/sebald/jest-mock-proxy
+[ci-badge]: https://img.shields.io/travis/sebald/jest-mock-proxy.svg?style=flat-square
+[license]: https://github.com/sebald/jest-mock-proxy/blob/master/LICENCE
+[license-badge]: https://img.shields.io/npm/l/jest-mock-proxy.svg?style=flat-square
+[package]: https://www.npmjs.com/package/jest-mock-proxy
+[version-badge]: https://img.shields.io/npm/v/jest-mock-proxy.svg?style=flat-square
