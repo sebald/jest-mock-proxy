@@ -10,7 +10,7 @@ module.exports = {
 
   // Coverage
   // ---------------
-  coveragePathIgnorePatterns: ['/node_modules/', '/*.d.ts/'],
+  coveragePathIgnorePatterns: ['/node_modules/', '/*.d.ts/', '/fixture/'],
 
   globals: {
     // ts-jest configuration
