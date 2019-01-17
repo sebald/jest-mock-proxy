@@ -46,7 +46,7 @@
   "scripts": {
     "start": "tsc",
     "test": "jest --config jest.config.js",
-    "clean": "rm -rf lib",
+    "clean": "rm -rf lib coverage",
     "typecheck": "tsc --noEmit",
     "lint": "tslint --format stylish \"src/**/*.ts\"",
     "format": "prettier --write \"src/**/*.ts\"",
