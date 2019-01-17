@@ -1,5 +1,8 @@
-import createMockProxy from '.';
+import Foo from './fixture/foo';
+import { createMockProxy, createProxyFromMock } from '.';
 
+// createMockProxy
+// ---------------
 test('create mock proxy', () => {
   const mock = createMockProxy<{
     foo(): void;
@@ -36,4 +39,38 @@ test('clean up mock data', () => {
   mock.foo('foo');
   mock.mockClear();
   expect(mock.foo.mock.calls).toMatchInlineSnapshot(`Array []`);
+});
+
+// createProxyFromMock
+// ---------------
+jest.mock('./fixture/foo');
+
+test('input must be a mock', () => {
+  expect(() => createProxyFromMock(class {}))
+    .toThrowErrorMatchingInlineSnapshot(`
+"Expected class {
+    } to be a jest mock.
+If you want to mock a module, make sure you have called \\"jest.mock('<module name>')\\"."
+`);
+});
+
+test('import will be mocked behind the scences', () => {
+  const mockedFoo = createProxyFromMock(Foo);
+  const foo = new Foo();
+
+  // Use any, because TypeScript does not know how jest mocking works.
+  expect((mockedFoo as any) === foo).toBeTruthy();
+});
+
+test('proxy from mocked class', () => {
+  const mockedFoo = createProxyFromMock(Foo);
+  const foo = new Foo();
+
+  mockedFoo.hello.mockReturnValue('I am mocked!');
+  expect(foo.hello()).toMatchInlineSnapshot(`"I am mocked!"`);
+
+  mockedFoo.waitFor.mockResolvedValue('...');
+  expect(
+    foo.waitFor('this will not be returned, becaue it was mocked')
+  ).resolves.toMatchInlineSnapshot(`"..."`);
 });

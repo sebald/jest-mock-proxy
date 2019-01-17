@@ -2,7 +2,7 @@
   "compilerOptions": {
     "module": "commonjs",
     "target": "es2017",
-    "lib": ["es2017"],
+    "lib": ["dom", "es2017"],
     "sourceMap": true,
     "declaration": true,
     "allowSyntheticDefaultImports": true,
@@ -21,6 +21,6 @@
       }
     ]
   },
-  "include": ["src/**/*"],
-  "exclude": ["coverage", "lib", "node_modules", "**/*.test.ts"]
+  "include": ["src/*"],
+  "exclude": ["coverage", "lib", "fixture", "node_modules", "**/*.test.ts"]
 }
