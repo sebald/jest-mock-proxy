@@ -1,6 +1,6 @@
 {
   "name": "jest-mock-proxy",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "description": "Mock classes and objects with the power of proxies!",
   "license": "MIT",
   "repository": "sebald/jest-mock-proxy",
