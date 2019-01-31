@@ -9,6 +9,7 @@ export const createMockProxy = <T>() => {
       if (!cache.has(name)) {
         cache.set(name, jest.fn());
       }
+
       return cache.get(name);
     },
   };

@@ -13,13 +13,7 @@
     "suppressImplicitAnyIndexErrors": true,
     "noUnusedLocals": true,
     "skipLibCheck": true,
-    "outDir": "lib",
-    "plugins": [
-      {
-        "name": "typescript-tslint-plugin",
-        "alwaysShowRuleFailuresAsWarnings": false
-      }
-    ]
+    "outDir": "lib"
   },
   "include": ["src/*"],
   "exclude": ["coverage", "lib", "fixture", "node_modules", "**/*.test.ts"]

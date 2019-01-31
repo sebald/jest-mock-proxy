@@ -1,0 +1,19 @@
+{
+  "root": true,
+  "env": {
+    "jest": true
+  },
+  "plugins": ["jest"],
+  "extends": [
+    "plugin:jest/recommended",
+    "xo",
+    "xo-typescript",
+    "prettier",
+    "prettier/@typescript-eslint"
+  ],
+  "rules": {
+    // Currently broken, see https://github.com/typescript-eslint/typescript-eslint/issues/170
+    "@typescript-eslint/no-extraneous-class": "off",
+    "@typescript-eslint/explicit-function-return-type": "off"
+  }
+}

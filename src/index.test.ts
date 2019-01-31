@@ -1,7 +1,7 @@
 import Foo from './fixture/foo';
 import { createMockProxy, createProxyFromMock } from '.';
 
-// createMockProxy
+// API: createMockProxy
 // ---------------
 test('create mock proxy', () => {
   const mock = createMockProxy<{
@@ -41,7 +41,7 @@ test('clean up mock data', () => {
   expect(mock.foo.mock.calls).toMatchInlineSnapshot(`Array []`);
 });
 
-// createProxyFromMock
+// API: createProxyFromMock
 // ---------------
 jest.mock('./fixture/foo');
 

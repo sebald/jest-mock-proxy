@@ -34,24 +34,27 @@
   },
   "devDependencies": {
     "@types/jest": "23.3.12",
+    "@typescript-eslint/eslint-plugin": "1.1.1",
     "conventional-changelog-cli": "2.0.11",
     "conventional-changelog-emojis": "2.0.0",
+    "eslint": "5.12.1",
+    "eslint-config-prettier": "4.0.0",
+    "eslint-config-xo": "0.26.0",
+    "eslint-config-xo-typescript": "0.6.0",
+    "eslint-plugin-jest": "22.2.1",
     "husky": "1.3.1",
     "jest": "23.6.0",
     "prettier": "1.15.3",
     "pretty-quick": "1.8.1",
     "ts-jest": "23.10.5",
-    "tslint": "5.12.1",
-    "tslint-config-prettier": "1.17.0",
-    "typescript": "3.2.2",
-    "typescript-tslint-plugin": "0.2.1"
+    "typescript": "3.2.4"
   },
   "scripts": {
     "start": "tsc",
     "test": "jest --config jest.config.js",
     "clean": "rm -rf lib coverage",
     "typecheck": "tsc --noEmit",
-    "lint": "tslint --format stylish \"src/**/*.ts\"",
+    "lint": "eslint \"src/**/*.ts\"",
     "format": "prettier --write \"src/**/*.ts\"",
     "ci": "jest --config jest.config.js --coverage",
     "version": "conventional-changelog -p emojis -i CHANGELOG.md -s -r 0 && git add CHANGELOG.md"
