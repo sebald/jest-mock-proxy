@@ -46,6 +46,7 @@ test('clean up mock data', () => {
 jest.mock('./fixture/foo');
 
 test('input must be a mock', () => {
+  // eslint-disable-next-line @typescript-eslint/no-extraneous-class
   expect(() => createProxyFromMock(class {}))
     .toThrowErrorMatchingInlineSnapshot(`
 "Expected class {
