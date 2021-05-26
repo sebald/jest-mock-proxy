@@ -1,4 +1,4 @@
-export const createMockProxy = <T>() => {
+export const createMockProxy = <T>(objectName = 'mock') => {
   const cache = new Map<any, jest.Mock>();
   const handler: ProxyHandler<object> = {
     get: (_, name) => {
@@ -7,7 +7,7 @@ export const createMockProxy = <T>() => {
       }
 
       if (!cache.has(name)) {
-        cache.set(name, jest.fn());
+        cache.set(name, jest.fn().mockName(`${objectName}.${String(name)}`));
       }
 
       return cache.get(name);

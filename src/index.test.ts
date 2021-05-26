@@ -11,11 +11,18 @@ test('create mock proxy', () => {
 
   expect(jest.isMockFunction(mock.bar)).toBeTruthy();
   expect(jest.isMockFunction(mock.foo)).toBeTruthy();
+  expect(mock.bar.getMockName()).toEqual('mock.bar');
+  expect(mock.foo.getMockName()).toEqual('mock.foo');
 
   mock.foo();
   mock.bar('foo');
   expect(mock.foo).toHaveBeenCalledTimes(1);
   expect(mock.bar).toHaveBeenCalledWith('foo');
+});
+
+test('set mock name', () => {
+  const mock = createMockProxy<{ foo(): void }>('myMock');
+  expect(mock.foo.getMockName()).toEqual('myMock.foo');
 });
 
 test('mock proxy allows to set return values', () => {
