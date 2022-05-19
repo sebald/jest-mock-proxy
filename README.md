@@ -45,7 +45,7 @@ export class Service {
 import { createMockProxy } from 'jest-mock-proxy';
 import { service } from './service';
 
-const mock = createMockProxy<Service>();
+const mock = createMockProxy<typeof Service>();
 
 mock.foo();
 
@@ -64,7 +64,7 @@ import fixture from './__fixtures__/elastic-response.json';
 import createService from './createService';
 
 const client = createMockProxy<Client>();
-cosnt service = createService(client);
+const service = createService(client);
 
 beforeEach(() => {
   client.mockClear();
