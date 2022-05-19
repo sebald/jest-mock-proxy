@@ -113,8 +113,8 @@ test('you can now mock the pool.query', async () => {
 
 <!-- LINKS -->
 
-[ci]: https://travis-ci.org/sebald/jest-mock-proxy
-[ci-badge]: https://img.shields.io/travis/sebald/jest-mock-proxy.svg?style=flat-square
+[ci]: https://actions-badge.atrox.dev/sebald/jest-mock-proxy/goto?ref=master
+[ci-badge]: https://img.shields.io/endpoint.svg?url=https%3A%2F%2Factions-badge.atrox.dev%2Fsebald%2Fjest-mock-proxy%2Fbadge%3Fref%3Dmaster&style=flat-square
 [coverage]: https://codecov.io/gh/sebald/jest-mock-proxy
 [coverage-badge]: https://img.shields.io/codecov/c/github/sebald/jest-mock-proxy.svg?style=flat-square
 [license]: https://github.com/sebald/jest-mock-proxy/blob/master/LICENCE
