@@ -50,7 +50,7 @@
     "typescript": "3.3.4000"
   },
   "scripts": {
-    "start": "tsc",
+    "build": "tsc",
     "test": "jest --config jest.config.js",
     "clean": "rm -rf lib coverage",
     "typecheck": "tsc --noEmit",
