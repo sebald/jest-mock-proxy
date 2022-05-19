@@ -1,4 +1,10 @@
-## [3.1.1](https://github.com/sebald/jest-mock-proxy/compare/v3.0.0...v3.1.1) (2022-05-19)
+## [3.1.2](https://github.com/sebald/jest-mock-proxy/compare/v3.1.1...v3.1.2) (2022-05-19)
+
+### Tooling
+
+- Fix build ([fe802b8](https://github.com/sebald/jest-mock-proxy/commit/fe802b8))
+
+[object Object]## [3.1.1](https://github.com/sebald/jest-mock-proxy/compare/v3.0.0...v3.1.1) (2022-05-19)
 
 ### Refactoring & Improvements
 
