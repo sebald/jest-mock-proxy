@@ -1,18 +1,24 @@
-# [3.1.0](https://github.com/sebald/jest-mock-proxy/compare/v3.0.0...v3.1.0) (2022-05-19)
+## [3.1.1](https://github.com/sebald/jest-mock-proxy/compare/v3.0.0...v3.1.1) (2022-05-19)
 
 ### Refactoring & Improvements
 
 - Add option to name a mock ([ca1f639](https://github.com/sebald/jest-mock-proxy/commit/ca1f639))
 
+### Tooling
+
+- Move to GH Actions ([3f9258d](https://github.com/sebald/jest-mock-proxy/commit/3f9258d))
+- Naming is hard ... ([ec61c25](https://github.com/sebald/jest-mock-proxy/commit/ec61c25))
+
 ### Documentation
 
 - Fix typos in readme ([2ae246b](https://github.com/sebald/jest-mock-proxy/commit/2ae246b))
+- Use action badge ([2eaa05b](https://github.com/sebald/jest-mock-proxy/commit/2eaa05b))
 
 ### Miscellaneous
 
 - Name the mock functions (#3) ([ab14878](https://github.com/sebald/jest-mock-proxy/commit/ab14878)), closes [#3](https://github.com/sebald/jest-mock-proxy/issues/Name the mock functions (#3/
 
-# [3.0.0](https://github.com/sebald/jest-mock-proxy/compare/f2e71a7...v3.0.0) (2019-03-22)
+[object Object]# [3.0.0](https://github.com/sebald/jest-mock-proxy/compare/f2e71a7...v3.0.0) (2019-03-22)
 
 ### Features
 
@@ -39,3 +45,5 @@
 ### Miscellaneous
 
 - Initial commit ([f2e71a7](https://github.com/sebald/jest-mock-proxy/commit/f2e71a7))
+
+[object Object]
